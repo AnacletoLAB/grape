@@ -7,4 +7,5 @@ Description TODO
 - [ ] Add script to deploy new versions
 - [ ] Add tutorials for GraPE in COLAB with links in the main readme
 - [ ] Compose the documentation as a website and link it from here
-- [ ] Add link to paper.
+- [ ] Add link to paper when available
+- [ ] Make the repository public
