@@ -46,7 +46,7 @@ setup(
     version=__version__,
     description="Rust/Python for high performance Graph Processing and Embedding.",
     long_description=long_description,
-    url="https://github.com/LucaCappelletti94/dict_hash",
+    url="https://github.com/LucaCappelletti94/grape",
     author=", ".join(list(authors.keys())),
     author_email=", ".join(list(authors.values())),
     # Choose your license
