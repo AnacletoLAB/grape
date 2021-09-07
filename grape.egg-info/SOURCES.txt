@@ -7,3 +7,5 @@ grape.egg-info/SOURCES.txt
 grape.egg-info/dependency_links.txt
 grape.egg-info/requires.txt
 grape.egg-info/top_level.txt
+grape/embiggen/__init__.py
+grape/ensmallen/__init__.py
