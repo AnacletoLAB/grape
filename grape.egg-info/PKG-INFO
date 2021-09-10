@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: grape
-Version: 0.0.2
+Version: 0.0.3
 Summary: Rust/Python for high performance Graph Processing and Embedding.
-Home-page: https://github.com/LucaCappelletti94/dict_hash
+Home-page: https://github.com/LucaCappelletti94/grape
 Author: Tommaso Fontana, Peter Robinson, Vida Ravanmehr, Luca Cappelletti
 Author-email: tommaso.fontana@mail.polimi.it, peter.robinson@jax.org, vida.ravanmehr@jax.org, luca.cappelletti1@unimi.it
 License: MIT
