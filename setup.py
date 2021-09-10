@@ -61,6 +61,6 @@ setup(
     tests_require=test_deps,
     install_requires=[
         "ensmallen>=0.6.1",
-        "embiggen>=0.9.0",
+        "embiggen>=0.9.1",
     ]
 )
