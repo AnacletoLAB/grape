@@ -12,9 +12,13 @@ As usual, just download it using pip:
 
     pip install grape
 
+Tutorials
+----------------------------------------------
+You can find tutorials covering various aspects of the GraPE library [here](https://github.com/AnacletoLAB/grape/tree/main/notebooks). All tutorials are as self-contained as possible and can be immediately executed on COLAB.
+
 Documentation
 ----------------------------------------------
-
+Currently the documentation website of the library is being developed.
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
     :target: https://badge.fury.io/py/grape
