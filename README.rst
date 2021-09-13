@@ -12,6 +12,9 @@ As usual, just download it using pip:
 
     pip install grape
 
+Documentation
+----------------------------------------------
+
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
     :target: https://badge.fury.io/py/grape
