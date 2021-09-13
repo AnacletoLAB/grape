@@ -18,7 +18,13 @@ As usual, just download it using pip:
 
 Tutorials
 ----------------------------------------------
-You can find tutorials covering various aspects of the GraPE library `here <https://github.com/AnacletoLAB/grape/tree/main/notebooks>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
+You can find tutorials covering various aspects of the GraPE library `here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
+
+If you want to get started real quick, after having installed `GraPE`_ as described above, you can try running:
+
+.. code:: python
+
+
 
 Documentation
 ----------------------------------------------
