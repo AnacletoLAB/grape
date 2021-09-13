@@ -5,3 +5,10 @@ software engineering porposes are kept as two separate packages.
 
 These packages are mimed here by the two sub-directories, ensmallen and embiggen.
 """
+import embiggen
+import ensmallen
+
+__all__ = [
+    "embiggen",
+    "ensmallen"
+]
