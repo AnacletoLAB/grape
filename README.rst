@@ -29,6 +29,7 @@ Cite GraPE
 Please cite the following paper if it was useful for your research:
 
 .. code:: bib
+
     TODO: add bibtex reference here to copy
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
