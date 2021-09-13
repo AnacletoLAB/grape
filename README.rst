@@ -18,12 +18,54 @@ As usual, just download it using pip:
 
 Tutorials
 ----------------------------------------------
-You can find tutorials covering various aspects of the GraPE library `here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
+You can `find tutorials covering various aspects of the GraPE library here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
 
 If you want to get started real quick, after having installed `GraPE`_ as described above, you can try running:
 
 .. code:: python
 
+    from ensmallen.datasets.linqs import Cora
+    from ensmallen.datasets.linqs.parse_linqs import get_words_data
+    from embiggen.pipelines import compute_node_embedding
+    from embiggen.visualizations import GraphVisualization
+    import matplotlib.pyplot as plt
+
+    # Dowload, load up the graph and its node features
+    graph, node_features = get_words_data(Cora())
+
+    # Compute a SkipGram node embedding, using a first-order random walk sampling
+    first_order_rw_node_embedding, training_history = compute_node_embedding(
+        graph,
+        node_embedding_method_name="SkipGram",
+    )
+
+    # Compute a SkipGram node embedding, using a second-order random walk sampling
+    second_order_rw_node_embedding, training_history = compute_node_embedding(
+        graph,
+        node_embedding_method_name="SkipGram",
+        # Let's increase the probability of explore the local neighbourhood
+        return_weight=2.0,
+        explore_weight=0.1
+    )
+
+    # Visualize the obtained node embeddings
+    for node_embedding, model_name in (
+        (first_order_rw_node_embedding, "First-order SkipGram")
+        (second_order_rw_node_embedding, "Second-order SkipGram")
+    ):    
+        visualizer = GraphVisualization(graph, node_embedding_method_name=node_embedding_method_name)
+        visualizer.fit_transform_nodes(node_embedding)
+
+        visualizer.plot_node_types()
+        plt.show()
+
+        visualizer.plot_node_degrees()
+        plt.show()
+
+        visualizer.plot_connected_components()
+        plt.show
+
+You can `see a tutorial detailing the above script here <https://github.com/AnacletoLAB/grape/blob/main/tutorials/SkipGram_to_embed_Cora.ipynb>`_, and you `can run it on COLAB from here <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/SkipGram_to_embed_Cora.ipynb>`_.
 
 
 Documentation
