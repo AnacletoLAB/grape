@@ -68,7 +68,7 @@ you'd like to compute its connected components. You could reasonably think that,
 it will likely contain terms relative to components, so after having loaded up the graph you could try
 to execute the following:
 
-..code:: python
+.. code:: python
 
     from ensmallen.datasets.string import HomoSapiens
 
@@ -79,6 +79,7 @@ The code above will raise the following error, hopefully leading you to find the
 method to do what you intended to do.
 
 .. code-block:: python
+
     AttributeError                            Traceback (most recent call last)
     <ipython-input-3-52fac30ac7f6> in <module>()
     ----> 2 graph.components
@@ -100,7 +101,7 @@ So the method we want to compute the connected components would be `connected_co
 Now, in order to get the method documentation, the easiest method is to use Python's [`help`](https://docs.python.org/3/library/functions.html#help)
 as follows:
 
-..code:: python
+.. code:: python
 
     help(graph.connected_components)
 
