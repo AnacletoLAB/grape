@@ -78,9 +78,7 @@ to execute the following:
 The code above will raise the following error, hopefully leading you to find the correct
 method to do what you intended to do.
 
-..code:: python
-
-    ---------------------------------------------------------------------------
+.. code-block:: python
     AttributeError                            Traceback (most recent call last)
     <ipython-input-3-52fac30ac7f6> in <module>()
     ----> 2 graph.components
@@ -108,7 +106,7 @@ as follows:
 
 And the above will return you:
 
-..code:: bash
+.. code-block:: rst
 
     connected_components(verbose) method of builtins.Graph instance
     Compute the connected components building in parallel a spanning tree using [bader's algorithm](https://www.sciencedirect.com/science/article/abs/pii/S0743731505000882).
