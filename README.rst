@@ -57,6 +57,86 @@ Documentation
 ----------------------------------------------
 Currently the documentation website of the library is being developed.
 
+Using the automatic method suggestions utility
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To make getting started with the `Ensmallen`_ library easier, we provide an integrated
+recommendere system meant to help you either find a method or, if a method has been
+renamed for any reason, find its new name.
+
+Let's suppose you are using the `STRING Homo Sapiens graph <https://string-db.org/cgi/organisms>`_, and
+you'd like to compute its connected components. You could reasonably think that, if there is such a method,
+it will likely contain terms relative to components, so after having loaded up the graph you could try
+to execute the following:
+
+..code:: python
+
+    from ensmallen.datasets.string import HomoSapiens
+
+    graph = HomoSapiens()
+    graph.components
+
+The code above will raise the following error, hopefully leading you to find the correct
+method to do what you intended to do.
+
+..code:: python
+
+    ---------------------------------------------------------------------------
+    AttributeError                            Traceback (most recent call last)
+    <ipython-input-3-52fac30ac7f6> in <module>()
+    ----> 2 graph.components
+
+    AttributeError: The method 'components' does not exists, did you mean one of the following?
+    * 'remove_components'
+    * 'connected_components'
+    * 'strongly_connected_components'
+    * 'get_connected_components_number'
+    * 'get_total_edge_weights'
+    * 'get_mininum_edge_weight'
+    * 'get_maximum_edge_weight'
+    * 'get_unchecked_maximum_node_degree'
+    * 'get_unchecked_minimum_node_degree'
+    * 'get_weighted_maximum_node_degree'
+
+So the method we want to compute the connected components would be `connected_components`.
+
+Now, in order to get the method documentation, the easiest method is to use Python's [`help`](https://docs.python.org/3/library/functions.html#help)
+as follows:
+
+..code:: python
+
+    help(graph.connected_components)
+
+And the above will return you:
+
+..code:: bash
+
+    connected_components(verbose) method of builtins.Graph instance
+    Compute the connected components building in parallel a spanning tree using [bader's algorithm](https://www.sciencedirect.com/science/article/abs/pii/S0743731505000882).
+    
+    **This works only for undirected graphs.**
+    
+    The returned quadruple contains:
+    - Vector of the connected component for each node.
+    - Number of connected components.
+    - Minimum connected component size.
+    - Maximum connected component size.
+    
+    Parameters
+    ----------
+    verbose: Optional[bool]
+        Whether to show a loading bar or not.
+    
+    
+    Raises
+    -------
+    ValueError
+        If the given graph is directed.
+    ValueError
+        If the system configuration does not allow for the creation of the thread pool.
+
+
+You can try `to run the code described above on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Method_recommender_system.ipynb>`_.
+
 Cite GraPE
 ----------------------------------------------
 Please cite the following paper if it was useful for your research:
