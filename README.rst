@@ -1,4 +1,7 @@
-![GraPE](../images/GRAPE.pdf) GraPE
+.. image:: ../images/GRAPE.pdf
+    :align: center
+
+GraPE
 ===================================
 |pip| |downloads|
 
