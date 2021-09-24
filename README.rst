@@ -2,7 +2,9 @@ GraPE
 ===================================
 |pip| |downloads|
 
-`GraPE`_ is a fast graph processing and embedding library, composed of two main modules: `Ensmallen`_ and `Embiggen`_, that are able to efficiently scale with big graphs using parallel computation and efficient data structures.
+`GraPE`_ (*Graph Processing and Embedding*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
+
+composed of two main modules: `Ensmallen`_ and `Embiggen`_, that are able to efficiently scale with big graphs using parallel computation and efficient data structures.
 
 `Ensmallen`_ efficiently loads big graphs and executes graph processing operations including large-scale first and second-order random walks, improving upon the performance of current state-of-the-art graph processing libraries by one to four orders of magnitude.
 
