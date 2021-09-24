@@ -3,7 +3,7 @@ GraPE
 ===================================
 |pip| |downloads|
 
-.. image:: ../images/GRAPE.jpg
+.. image:: images/GRAPE.jpg
     :align: center
 
 
