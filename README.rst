@@ -1,4 +1,5 @@
 .. image:: images/GRAPE.jpg
+    :width:  200  
     :align: left
 
 GraPE
