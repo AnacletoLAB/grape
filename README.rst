@@ -1,4 +1,4 @@
-GraPE
+![GraPE](../images/GRAPE.pdf) GraPE
 ===================================
 |pip| |downloads|
 
