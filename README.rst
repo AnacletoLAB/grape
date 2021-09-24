@@ -1,4 +1,4 @@
-.. image:: ../images/GRAPE.pdf
+.. image:: ../images/GRAPE.jpg
     :align: center
 
 GraPE
