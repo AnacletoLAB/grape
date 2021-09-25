@@ -61,7 +61,7 @@ Main functionalities of the library
     * Multi-Layer Perceptron
     * Deep Neural Networks
     
-* Graph visulaization tools: visualization of node and edge properties
+* Graph visualization tools: visualization of node and edge properties
         
 
 Architecture of the library
