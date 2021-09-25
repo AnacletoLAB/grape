@@ -17,7 +17,7 @@ The library is written in *Rust* and *Python* programming languages, and has bee
 
 Main functionalities of the library
 ----------------------------------------------
-* Automatic graph retrieval: more than 13000 graphs directly avaialble form the library for benchmarking
+* Automatic graph retrieval: more than 13000 graphs directly available from the library for benchmarking
 * Robust graph loading:
 
     * Support for multiple graph formats
@@ -26,12 +26,51 @@ Main functionalities of the library
 
 * Random walks:
 
-    * Exact and approximated dirst and seconf order random walks
+    * Exact and approximated first and second order random walk
     * Automatic dispatching of 8 optimized random walk algorithms depending on the paprameters of the random walk and the type (weighted/unweighted) of the graph
+    
+* Preprocessing for node embedding and edge prediction:
+
+    * Lazy generation of skip-grams from random walks
+    * Lazy generation of balanced batches for edge prediction
+    * GloVe co-occurence matrix computation
+    
+* Graph processing operations:
+
+    * Optimized filtering by node, edge and components characteristics
+    * Optimized algebraic set operations on graphs
+    * Automatic generation of reports summarizing graph features in natural language
+    
+* Graph algorithms:
+
+    * Breadth and Depth-first search
+    * Dijkstra, Tarjan's strongly connected component
+    * Efficient Diameter computation, spanning arborescence and connected components
+    * Approximated vertex cover, triads counting, transitivity, clustering coefficient and triangles counting
+    * Betweenness and stress centrality, Closeness and harmonic centrality
+    
+* Node embedding models:
+
+    * SkipGram
+    * CBOW
+    * GloVe
+    
+* Edge and node prediction models:
+
+    * Perceptron
+    * Multi-Layer Perceptron
+    * Deep Neural Networks
+    
+* Graph visulaization tools: visualization of node and edge properties
+        
 
 Architecture of the library
 ----------------------------------------------
 TO DO
+
+.. image:: images/
+    :width:  400  
+    :align: left
 
 Installation of `GraPE`_
 ----------------------------------------------
