@@ -17,7 +17,12 @@ The library is written in *Rust* and *Python* programming languages, and has bee
 
 Main functionalities of the library
 ----------------------------------------------
-TO DO
+* Automatic graph retrieval: more than 13000 graphs directly avaialble form the library for benchmarking
+* Robust graph loading
+
+    * Support for multiple graph formats
+    * Huamn readable report of format errors
+    * Support for graphs with homogeneous and heterogeneous bodes and edges
 
 Architecture of the library
 ----------------------------------------------
