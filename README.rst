@@ -68,8 +68,8 @@ Architecture of the library
 ----------------------------------------------
 TO DO
 
-.. image:: images/
-    :width:  400  
+.. image:: images/link_prediction_model.png
+    :width:  900  
     :align: left
 
 Installation of `GraPE`_
