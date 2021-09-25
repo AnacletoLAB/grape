@@ -6,14 +6,9 @@ GraPE
 ===================================
 |pip| |downloads|
 
-
-
 `GraPE`_ (*Graph Processing and Embedding*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
 
-
-
-
-The library is written in *Rust* and *Python* programming languages, and has been developed by `AnacletoLAB <https://anacletolab.di.unimi.it/>`_ (Dept.of Computer Science of the University of Milan), in collaboration with the [Robinson Lab - Jackson Laboratory for Genomic Medicine](https://www.jax.org/research-and-faculty/research-labs/the-robinson-lab) and with the [BBOP - Lawrence Berkeley National Laboratory](http://www.berkeleybop.org/index.html)
+The library is written in *Rust* and *Python* programming languages, and has been developed by `AnacletoLAB <https://anacletolab.di.unimi.it/>`_ (Dept.of Computer Science of the University of Milan), in collaboration with the `Robinson Lab <https://www.jax.org/research-and-faculty/research-labs/the-robinson-lab/>`_ (Jackson Laboratory for Genomic Medicine) and with the `BBOP <http://www.berkeleybop.org/index.html/>`_ (Lawrence Berkeley National Laboratory).
 
 `GraPE`_ is composed of two main modules: `Ensmallen`_ (*ENabler  of  SMALL  runtimE  and  memory  Needs*) and `Embiggen`_ (*EMBeddInG  GENerator*), that run synergistically using parallel computation and efficient data structures.
 
