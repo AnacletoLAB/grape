@@ -19,6 +19,10 @@ Main functionalities of the library
 ----------------------------------------------
 TO DO
 
+Architecture of the library
+----------------------------------------------
+TO DO
+
 Installation of `GraPE`_
 ----------------------------------------------
 As usual, just download it using pip:
