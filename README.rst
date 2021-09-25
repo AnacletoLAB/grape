@@ -18,11 +18,16 @@ The library is written in *Rust* and *Python* programming languages, and has bee
 Main functionalities of the library
 ----------------------------------------------
 * Automatic graph retrieval: more than 13000 graphs directly avaialble form the library for benchmarking
-* Robust graph loading
+* Robust graph loading:
 
     * Support for multiple graph formats
-    * Huamn readable report of format errors
+    * Human readable reports of format errors
     * Support for graphs with homogeneous and heterogeneous bodes and edges
+
+* Random walks:
+
+    * Exact and approximated dirst and seconf order random walks
+    * Automatic dispatching of 8 optimized random walk algorithms depending on the paprameters of the random walk and the type (weighted/unweighted) of the graph
 
 Architecture of the library
 ----------------------------------------------
