@@ -164,7 +164,7 @@ method to do what you intended to do.
 
 So the method we want to compute the connected components would be `connected_components`.
 
-Now, in order to get the method documentation, the easiest method is to use Python's [`help`](https://docs.python.org/3/library/functions.html#help)
+Now, in order to get the method documentation, the easiest method is to use Python's `help <https://docs.python.org/3/library/functions.html#help>`_
 as follows:
 
 .. code:: python
