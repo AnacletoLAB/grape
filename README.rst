@@ -32,6 +32,7 @@ Loading a graph
 The `Ensmallen`_ library supports (un)directed (un)weighted (multi)graphs with both node types and edge types.
 
 Specifically, the nodes can be provided with one or more node types from a node list, with the multiple node types separated by an arbitrary symbol.
+Currently any given edge can have only an edge type assigned to it. There can be an arbitrary number of edges between any two given nodes.
 
 In the example provided below, the node list is a TSV and the symbol used to separate the node types is a pipe (:code:`|`).
 
@@ -40,6 +41,14 @@ In the example provided below, the node list is a TSV and the symbol used to sep
     node_name   node_type
     a_node_name a_node_type
     another_node_name   a_node_type|another_node_type
+
+In the example below, the edge list is a TSV with four columns: :code:`source`, :code:`destination`, :code:`weight` and :code:`edge_type`. The column names are arbitrary and any column name may be used. The columns for the source and destination nodes must always be provided, while the weights and edge types columns are optional. Any other columns may exist in the TSV file and will be ignored while reading the file.
+
+.. code:: plain
+
+    source  destination weight  edge_type
+    source_node_name    destination_node_name   3.0 an_edge_type
+    another_source_node_name    destination_node_name   2.0 another_edge_type
 
 Learn more on how to load a graph into `Ensmallen`_ `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Loading_a_Graph_in_Ensmallen.ipynb>`_.
 
