@@ -33,7 +33,7 @@ The `Ensmallen`_ library supports (un)directed (un)weighted (multi)graphs with b
 
 Specifically, the nodes can be provided with one or more node types from a node list, with the multiple node types separated by an arbitrary symbol.
 
-In the example provided below, the node list is a TSV and the symbol used to separate the node types is a pipe (:plain:`|`).
+In the example provided below, the node list is a TSV and the symbol used to separate the node types is a pipe (:code:`|`).
 
 .. code:: plain
 
