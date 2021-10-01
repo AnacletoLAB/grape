@@ -110,6 +110,23 @@ The overall **pattern** to get a graph from a repository looks like the followin
 
 Let's now get to some concrete examples.
 
+To retrieve graphs from `KGOBO <https://github.com/Knowledge-Graph-Hub/kg-obo>`_ you can use the following code snippet:
+
+.. code:: python
+
+    from ensmallen.datasets.kgobo import ZFS
+    graph = ZFS()
+
+You can learn more `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retieval_KGOBO.ipynb>`_.
+
+Similarly, to retrieve graphs from `STRING <https://string-db.org/>`_, for instance Homo Sapiens, you can use:
+
+.. code:: python
+
+    from ensmallen.datasets.string import HomoSapiens
+    graph = HomoSapiens()
+
+You can learn more `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retrieval_STRING.ipynb>`_.
 
 * Automatic graph retrieval: more than 13000 graphs directly available from the library for benchmarking
 * Robust graph loading:
