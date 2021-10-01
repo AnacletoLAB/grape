@@ -50,6 +50,26 @@ In the example below, the edge list is a TSV with four columns: :code:`source`, 
     source_node_name    destination_node_name   3.0 an_edge_type
     another_source_node_name    destination_node_name   2.0 another_edge_type
 
+The reference method to use to load a graph object from file is :code:`Graph.from_csv`. To read the complete documentation of the method, which is extensive, do run :code:`help(Graph.from_csv)`.
+
+Here follows a brief example loading TSV node list and edge list as the ones above.
+
+.. code:: python
+
+    from ensmallen import Graph
+
+    graph = Graph.from_csv(
+        edge_path="path/to/the/edge_list.tsv",
+        sources_column="source",
+        destinations_column="destination",
+        weights_column="weights",
+        edge_list_edge_types_column="edge_type",
+        node_path="path/to/the/node_list.tsv",
+        nodes_column="node_name",
+        node_list_node_types_column="node_type",
+        directed=False,
+    )
+
 Learn more on how to load a graph into `Ensmallen`_ `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Loading_a_Graph_in_Ensmallen.ipynb>`_.
 
 Automatic graph retrieval
