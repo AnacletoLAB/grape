@@ -76,9 +76,29 @@ Automatic graph retrieval
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Both to help get started with the `Ensmallen`_ library and to help making experiments reproducible, in the library are included an ever-increasing list of graphs from the literature that can be automatically retrieved.
 
+In order to get the complete list of dataset currently available from the library you can run the following code snippet:
+
 .. code:: python
 
+    from ensmallen.datasets import get_all_available_graphs_dataframe
+    get_all_available_graphs_dataframe()
 
+The above code will output a dataframe like the following table:
+
+============  ======================================  ====================
+repository    graph_name                              version
+============  ======================================  ====================
+string        AspergillusOryzae                       homology.v11.5
+string        NitrospiraDefluvii                      links.v11.0
+string        CandidaOrthopsilosis                    links.v11.5
+string        DethiosulfatibacterAminovoransDsm17477  links.v11.5
+string        CeleribacterEthanolicus                 physical.links.v11.5
+string        SpiribacterSalinus                      links.v11.5
+string        ChlorobiumLuteolum                      links.v11.0
+string        PaenibacillusSwuensis                   links.v11.5
+string        StreptomycesBingchenggensis             links.v11.5
+string        DesulfurisporaThermophila               homology.v11.0
+============  ======================================  ====================
 
 * Automatic graph retrieval: more than 13000 graphs directly available from the library for benchmarking
 * Robust graph loading:
