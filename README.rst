@@ -117,7 +117,7 @@ To retrieve graphs from `KGOBO <https://github.com/Knowledge-Graph-Hub/kg-obo>`_
     from ensmallen.datasets.kgobo import ZFS
     graph = ZFS()
 
-You can learn more `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retieval_KGOBO.ipynb>`_.
+You can learn more `on using the OBO graphs here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retieval_KGOBO.ipynb>`_.
 
 Similarly, to retrieve graphs from `STRING <https://string-db.org/>`_, for instance Homo Sapiens, you can use:
 
@@ -126,18 +126,37 @@ Similarly, to retrieve graphs from `STRING <https://string-db.org/>`_, for insta
     from ensmallen.datasets.string import HomoSapiens
     graph = HomoSapiens()
 
-You can learn more `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retrieval_STRING.ipynb>`_.
+You can learn more `on using the STRING graphs here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retrieval_STRING.ipynb>`_.
 
-* Automatic graph retrieval: more than 13000 graphs directly available from the library for benchmarking
-* Robust graph loading:
-    * Support for multiple graph formats
-    * Human readable reports of format errors
-    * Support for graphs with homogeneous and heterogeneous nodes and edges
+The same overall pattern applies to all other graph repositories. If you believe that an example may be of help, do feel free to `open a GitHub issue describing what the missing tutorial should contain <https://github.com/AnacletoLAB/grape/issues/new>`_.
 
-* Random walks:
+Random walks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+One of the arguably best features of the `Ensmallen`_ library is the fast computation of weight and weighted, first and second order random walks, both exact and approximated (with dynamic neighbourhood subsampling).
 
-    * Exact and approximated first and second order random walks
-    * Automatic dispatching of 8 optimized random walk algorithms depending on the parameters of the random walk and the type (weighted/unweighted) of the graph
+.. code:: python
+
+    from ensmallen.datasets.string import HomoSapiens
+    graph = HomoSapiens()
+
+    sampled_walks = graph.random_walks(
+        # We want random walks with length 100
+        walk_length=32,
+        # We want to get random walks starting from 1000 random nodes
+        quantity=1000,
+        # We want 2 iterations from each node
+        iterations=2
+    )
+
+    complete_walks = graph.complete_walks(
+        # We want random walks with length 100
+        walk_length=100,
+        # We want 2 iterations from each node
+        iterations=2
+    )
+
+You can learn more `about running random walks using Ensmallen on COLAB here <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/First_and_Second_order_random_walks.ipynb>`_.
+
     
 * Preprocessing for node embedding and edge prediction:
 
