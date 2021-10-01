@@ -83,7 +83,7 @@ In order to get the complete list of dataset currently available from the librar
     from ensmallen.datasets import get_all_available_graphs_dataframe
     get_all_available_graphs_dataframe()
 
-The above code will output a dataframe like the following table:
+The above code will output a dataframe like the following table, with a column with the source repository of the graph, the name of the graph and the version of the graph, as in some cases the same graph will be provided in multiple versions.
 
 ============  ======================================  ====================
 repository    graph_name                              version
@@ -99,6 +99,17 @@ string        PaenibacillusSwuensis                   links.v11.5
 string        StreptomycesBingchenggensis             links.v11.5
 string        DesulfurisporaThermophila               homology.v11.0
 ============  ======================================  ====================
+
+The overall **pattern** to get a graph from a repository looks like the following code snippet:
+
+.. code:: python
+
+    from ensmallen.datasets.{repository} import {graph_name}
+
+    graph = {graph_name}()
+
+Let's now get to some concrete examples.
+
 
 * Automatic graph retrieval: more than 13000 graphs directly available from the library for benchmarking
 * Robust graph loading:
