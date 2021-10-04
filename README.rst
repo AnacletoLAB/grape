@@ -42,13 +42,26 @@ Main functionalities of the library
 
      * More than 13000 graphs directly available from the library for benchmarking
      * Support for multiple graph formats
-     * Human readable reports of format errors
-     * Automatic human readable reports of the main grraph characteristics
+     * Automatic human readable reports of format errors
+     * Automatic human readable reports of the main graph characteristics
 
 * Random walks:
 
      * Exact and approximated first and second order random walks
+     * Massive generation of sampled random walks for graph embedding
      * Automatic dispatching of 8 optimized random walk algorithms depending on the parameters of the random walk and the type (weighted/unweighted) of the graph
+
+* Node embedding models:
+
+    * SkipGram
+    * CBOW
+    * GloVe
+    
+* Edge and node prediction models:
+
+    * Perceptron
+    * Multi-Layer Perceptron
+    * Deep Neural Networks
 
 * Preprocessing for node embedding and edge prediction:
 
@@ -69,18 +82,6 @@ Main functionalities of the library
     * Efficient Diameter computation, spanning arborescence and connected components
     * Approximated vertex cover, triads counting, transitivity, clustering coefficient and triangles counting
     * Betweenness and stress centrality, Closeness and harmonic centrality
-    
-* Node embedding models:
-
-    * SkipGram
-    * CBOW
-    * GloVe
-    
-* Edge and node prediction models:
-
-    * Perceptron
-    * Multi-Layer Perceptron
-    * Deep Neural Networks
     
 * Graph visualization tools: visualization of node and edge properties
         
