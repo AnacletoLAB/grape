@@ -195,18 +195,11 @@ Ensamllen provides many more featuring utilities:
 * Graph visualization tools: visualization of node and edge properties
         
 
-Architecture of the library
-----------------------------------------------
-TO DO
-
-
-
-
 Tutorials
 ----------------------------------------------
 You can `find tutorials covering various aspects of the GraPE library here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
 
-If you want to get started real quick, after having installed `GraPE`_ from Pypi as described above, you can try running the following SkipGram on Cora example:
+If you want to get quickly started, after having installed `GraPE`_ from Pypi as described above, you can try running the following example using the SkipGram embedding model on the Cora-graph:
 
 .. code:: python
 
@@ -245,14 +238,9 @@ Currently the documentation website of the library is being developed.
 
 Using the automatic method suggestions utility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To make getting started with the `Ensmallen`_ library easier, we provide an integrated
-recommendere system meant to help you either find a method or, if a method has been
-renamed for any reason, find its new name.
+To aid working with the library, Grape provides an integrated recommender system meant to help you either to find a method or, if a method has been renamed for any reason, find its new name.
 
-Let's suppose you are using the `STRING Homo Sapiens graph <https://string-db.org/cgi/organisms>`_, and
-you'd like to compute its connected components. You could reasonably think that, if there is such a method,
-it will likely contain terms relative to components, so after having loaded up the graph you could try
-to execute the following:
+As an example, after having loaded the `STRING Homo Sapiens graph <https://string-db.org/cgi/organisms>`_, the function for computing the connected components can be retrieved by simply typing components as follows: 
 
 .. code:: python
 
@@ -261,8 +249,7 @@ to execute the following:
     graph = HomoSapiens()
     graph.components
 
-The code above will raise the following error, hopefully leading you to find the correct
-method to do what you intended to do.
+The code above will raise the following error, and will suggest methods with a similar or related name:
 
 .. code-block:: python
 
@@ -282,9 +269,9 @@ method to do what you intended to do.
     * 'get_unchecked_minimum_node_degree'
     * 'get_weighted_maximum_node_degree'
 
-So the method we want to compute the connected components would be `connected_components`.
+In our example the method we need for computing the graph components would be `connected_components`.
 
-Now, in order to get the method documentation, the easiest method is to use Python's `help <https://docs.python.org/3/library/functions.html#help>`_
+Now the easiest way to get the method documentation is to use Python's `help <https://docs.python.org/3/library/functions.html#help>`_
 as follows:
 
 .. code:: python
