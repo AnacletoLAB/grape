@@ -17,14 +17,16 @@ The library is written in *Rust* and *Python* programming languages, and has bee
 Beside being helpful for unsupervised exploratory analysis of graphs, the computed embeddings can be used for trainining any of the flexible neural models for edge and node label prediction, provided by `Embiggen`_ itself.
 
 
-
 Installation of `GraPE`_
 ----------------------------------------------
+**TO DO**: insert here the sw requirements for the installation
+
 As usual, just download it using pip:
 
 .. code:: shell
 
     pip install grape
+
 
 Main functionalities of the library
 ----------------------------------------------
