@@ -118,7 +118,7 @@ As an example, to retrieve graphs from `KGOBO <https://github.com/Knowledge-Grap
     from ensmallen.datasets.kgobo import ZFS
     graph = ZFS()
 
-You can learn more `on using the OBO graphs here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retieval_KGOBO.ipynb>`_.
+You can learn more `on using the OBO graphs for computing several graph properties, embedding edges and nodes through a transE methos, and visualizing the embedded nodes and edges here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retieval_KGOBO.ipynb>`_.
 
 Similarly, to retrieve graphs from `STRING <https://string-db.org/>`_, for instance Homo Sapiens, you can use:
 
