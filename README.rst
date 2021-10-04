@@ -17,7 +17,8 @@ The library is written in *Rust* and *Python* programming languages, and has bee
 Beside being helpful for unsupervised exploratory analysis of graphs, the computed embeddings can be used for trainining any of the flexible neural models for edge and node label prediction, provided by `Embiggen`_ itself.
 
 The following figure shows the main relationships between `Ensmallen`_ and `Embiggen`_ modules:
-.. image:: images/GRAPE.jpg
+
+.. image:: images/link_prediction_model.png
     :width:  400  
     :align: left
 
