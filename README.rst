@@ -19,7 +19,7 @@ Beside being helpful for unsupervised exploratory analysis of graphs, the comput
 The following figure shows the main relationships between `Ensmallen`_ and `Embiggen`_ modules:
 
 .. image:: images/link_prediction_model.png
-    :width:  400  
+    :width:  900  
     :align: left
 
 
