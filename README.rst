@@ -26,150 +26,25 @@ As usual, just download it using pip:
 
     pip install grape
 
-Installation of `GraPE`_
-----------------------------------------------
-**TO DO**: insert here the sw requirements for the installation
+Automatic graph retrieval: 
 
-As usual, just download it using pip:
 
-.. code:: shell
-
-    pip install grape
 
 
 Main functionalities of the library
 ----------------------------------------------
-The `GraPE`_ library comes with a multitude of features, from dataset retrieval, to graph processing, node embedding, holdouts and visualization tools.
 
-Loading a graph
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The `Ensmallen`_ library supports (un)directed (un)weighted (multi)graphs with both node types and edge types.
+* Robust graph loading and automatic graph retrieval:
 
-Specifically, the nodes can be provided with one or more node types from a node list, with the multiple node types separated by an arbitrary symbol.
-Currently any given edge can have only an edge type assigned to it. There can be an arbitrary number of edges between any two given nodes.
+     * More than 13000 graphs directly available from the library for benchmarking
+     * Support for multiple graph formats
+     * Human readable reports of format errors
+     * Automatic human readable reports of the main grraph characteristics
 
-In the example provided below, the node list is a TSV and the symbol used to separate the node types is a pipe (:code:`|`).
+* Random walks:
 
-.. code:: plain
-
-    node_name   node_type
-    a_node_name a_node_type
-    another_node_name   a_node_type|another_node_type
-
-In the example below, the edge list is a TSV with four columns: :code:`source`, :code:`destination`, :code:`weight` and :code:`edge_type`. The column names are arbitrary and any column name may be used. The columns for the source and destination nodes must always be provided, while the weights and edge types columns are optional. Any other columns may exist in the TSV file and will be ignored while reading the file.
-
-.. code:: plain
-
-    source  destination weight  edge_type
-    source_node_name    destination_node_name   3.0 an_edge_type
-    another_source_node_name    destination_node_name   2.0 another_edge_type
-
-The reference method to use to load a graph object from file is :code:`Graph.from_csv`. To read the complete documentation of the method, which is extensive, do run :code:`help(Graph.from_csv)`.
-
-In the following, we report a brief example code for loading a TSV node list (saved in the TSV file "path/to/the/node_list.tsv") and the corresponding TSV edge list (saved in the TSV file "path/to/the/node_list.tsv").
-
-.. code:: python
-
-    from ensmallen import Graph
-
-    graph = Graph.from_csv(
-        edge_path="path/to/the/edge_list.tsv",
-        sources_column="source",
-        destinations_column="destination",
-        weights_column="weights",
-        edge_list_edge_types_column="edge_type",
-        node_path="path/to/the/node_list.tsv",
-        nodes_column="node_name",
-        node_list_node_types_column="node_type",
-        directed=False,
-    )
-
-Learn more on how to load a graph into `Ensmallen`_ `here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Loading_a_Graph_in_Ensmallen.ipynb>`_.
-
-Automatic graph retrieval
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-`Ensmallen`_ library includes an ever-increasing list of literature graphs, that can be automatically retrieved.
-
-The following code prints all the complete list of graphs currently available from the library:
-
-.. code:: python
-
-    from ensmallen.datasets import get_all_available_graphs_dataframe
-    get_all_available_graphs_dataframe()
-
-The above code will output a dataframe as the following. It reports the source repository providing the graph, the name of the graph and its version (mutiple versions of the same graph are provided).
-
-============  ======================================  ====================
-repository    graph_name                              version
-============  ======================================  ====================
-string        AspergillusOryzae                       homology.v11.5
-string        NitrospiraDefluvii                      links.v11.0
-string        CandidaOrthopsilosis                    links.v11.5
-string        DethiosulfatibacterAminovoransDsm17477  links.v11.5
-string        CeleribacterEthanolicus                 physical.links.v11.5
-string        SpiribacterSalinus                      links.v11.5
-string        ChlorobiumLuteolum                      links.v11.0
-string        PaenibacillusSwuensis                   links.v11.5
-string        StreptomycesBingchenggensis             links.v11.5
-string        DesulfurisporaThermophila               homology.v11.0
-============  ======================================  ====================
-
-The load a graph from a repository use the following code **pattern**:
-
-.. code:: python
-
-    from ensmallen.datasets.{repository} import {graph_name}
-
-    graph = {graph_name}()
-
-As an example, to retrieve graphs from `KGOBO <https://github.com/Knowledge-Graph-Hub/kg-obo>`_ you can use the following code snippet:
-
-.. code:: python
-
-    from ensmallen.datasets.kgobo import ZFS
-    graph = ZFS()
-
-You can learn more `on using the OBO graphs for computing several graph properties, embedding edges and nodes through a transE methos, and visualizing the embedded nodes and edges here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retieval_KGOBO.ipynb>`_.
-
-Similarly, to retrieve graphs from `STRING <https://string-db.org/>`_, for instance Homo Sapiens, you can use:
-
-.. code:: python
-
-    from ensmallen.datasets.string import HomoSapiens
-    graph = HomoSapiens()
-
-You can learn more `on using the STRING graphs here on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_Graph_Retrieval_STRING.ipynb>`_.
-
-The same overall pattern applies to all other graph repositories. 
-
-Random walks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-`Ensmallen`_ library provides a fast computation of weighted first and second order random walks, both exact and approximated (with dynamic neighbourhood subsampling). In the following example we load the HomoSapiens graph from String and we compute exact walks (*complete_walks*) and approximated walks (*sampled_walks*)
-
-.. code:: python
-
-    from ensmallen.datasets.string import HomoSapiens
-    graph = HomoSapiens()
-
-    complete_walks = graph.complete_walks(
-        # We want random walks with length 100
-        walk_length=100,
-        # We want 2 iterations from each node
-        iterations=2
-    )
-    
-    sampled_walks = graph.random_walks(
-        # We want random walks with length 100
-        walk_length=100,
-        # We want to get random walks starting from 1000 random nodes
-        quantity=1000,
-        # We want 2 iterations from each node
-        iterations=2
-    )
-
-You can learn more `about running random walks using Ensmallen on COLAB here <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/First_and_Second_order_random_walks_new.ipynb>`_.
-
-Ensamllen provides many more featuring utilities:
+     * Exact and approximated first and second order random walks
+     * Automatic dispatching of 8 optimized random walk algorithms depending on the parameters of the random walk and the type (weighted/unweighted) of the graph
 
 * Preprocessing for node embedding and edge prediction:
 
