@@ -26,10 +26,6 @@ As usual, just download it using pip:
 
     pip install grape
 
-Automatic graph retrieval: 
-
-
-
 
 Main functionalities of the library
 ----------------------------------------------
