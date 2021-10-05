@@ -26,13 +26,24 @@ The following figure shows the main relationships between `Ensmallen`_ and `Embi
 
 Installation of `GraPE`_
 ----------------------------------------------
-**TO DO**: add the sw requirements for the installation
 
-As usual, just download it using pip:
+For most computers you can just download it using pip:
 
 .. code:: shell
 
     pip install grape
+    
+Since Ensmallen is written in Rust, on PyPi we distribute pre-compiled packages for :code:`Windows, Linux, MacOs` for the Python version :code:`3.6, 3.7, 3.8, 3.9` for :code:`x86_64` cpus.
+
+We also assume that the cpu has the following features: :code:`sse, sse2, ssse3, sse4_1, sse4_2, avx, avx2, bmi1, bmi2, popcnt`.
+While these features are not strictly required they significanly speed-up the executions and the newest of these features were introduced in Intel's Haswell architecture in 2013, so any :code:`x86_64` cpu newer than 2013 should be able to use the precompiled binaries from PyPi.
+
+For the Linux binaires we follow the `Python's ManyLinux2010 (PEP 571) <https://www.python.org/dev/peps/pep-0571/>`_ standard which requires libc version >= 2.12, this version was releasted in 03/08/2010 so any Linux System in the last ten years should be compatible. To check your current libc version you can run :code:`ldd --version`.
+
+These requirements were chosen to provide a good tradeoff between compatability and performance. 
+If your system is not compatible, you can `manually compile Ensmallen <https://github.com/AnacletoLAB/ensmallen/blob/master/bindings/python/README.md>`_ for any  Os, libc version, and CPU architecture (such as Arm, AArch64, RiscV, Mips) which are supported by Rust and LLVM. 
+Manually compiling Ensmallen might require more than half an hour and around 10Gb of RAM, if you encounter any error during the installation and/or compilation feel free to open an Issue here on Github and we will help troubleshoot it.
+
 
 
 Main functionalities of the library
