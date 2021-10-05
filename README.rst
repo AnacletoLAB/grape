@@ -35,7 +35,7 @@ For most computers you can just download it using pip:
     
 Since Ensmallen is written in Rust, on PyPi we distribute pre-compiled packages for :code:`Windows, Linux, MacOs` for the Python version :code:`3.6, 3.7, 3.8, 3.9` for :code:`x86_64` cpus.
 
-We also assume that the cpu has the following features: :code:`sse, sse2, ssse3, sse4_1, sse4_2, avx, avx2, bmi1, bmi2, popcnt`.
+We also assume that the cpu has the following features: :code:`sse, sse2, ssse3, sse4_1, sse4_2, avx, avx2, bmi1, bmi2, popcnt`. On Linux you can check if your CPU supports these features by running :code:`cat /proc/cpuinfo` and ensuring that all these features are presents under the :code:`flags` section.
 While these features are not strictly required they significanly speed-up the executions and the newest of these features were introduced in Intel's Haswell architecture in 2013, so any :code:`x86_64` cpu newer than 2013 should be able to use the precompiled binaries from PyPi.
 
 For the Linux binaires we follow the `Python's ManyLinux2010 (PEP 571) <https://www.python.org/dev/peps/pep-0571/>`_ standard which requires libc version >= 2.12, this version was releasted in 03/08/2010 so any Linux System in the last ten years should be compatible. To check your current libc version you can run :code:`ldd --version`.
