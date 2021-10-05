@@ -44,9 +44,12 @@ If the your CPU doesn't support them you will get, on import, the following :cod
 
 .. code:: shell
 
-    This library was compiled assuming that SIMD instruction commonly available in CPU hardware since 2013 are present on the machine where this library is intended to run.
+    This library was compiled assuming that SIMD instruction commonly available in CPU hardware since 2013 are present 
+    on the machine where this library is intended to run.
     On the current machine, the flags <MISSING_FLAGS> are not available.
-    You could still compile Ensmallen on this machine and have a version of the library that can execute here, but the library has been extensively designed to use SIMD instructions, so you would have a version slower than the one provided on Pypi.
+    You could still compile Ensmallen on this machine and have a version of the library that can execute here, but the 
+    library has been extensively designed to use SIMD instructions, so you would have a version slower than the one 
+    provided on Pypi.
 
 
 These requirements were chosen to provide a good tradeoff between compatability and performance. 
