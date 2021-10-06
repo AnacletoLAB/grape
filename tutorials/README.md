@@ -5,6 +5,7 @@ Within [this directory](https://github.com/AnacletoLAB/grape/tree/main/tutorials
 The currently available tutorials relative to the [Ensmallen](https://github.com/AnacletoLAB/ensmallen) submodule are:
 
 * [Loading a graph in Ensmallen](https://github.com/AnacletoLAB/grape/blob/main/tutorials/Loading_a_Graph_in_Ensmallen.ipynb)
+* [Automatic graph retrieval utilities](https://github.com/AnacletoLAB/grape/blob/main/tutorials/)
 * [First and Second order random walks](https://github.com/AnacletoLAB/grape/blob/main/tutorials/First_and_Second_order_random_walks.ipynb)
 * [High performance graph algorithms](https://github.com/AnacletoLAB/grape/blob/main/tutorials/High_performance_graph_algorithms.ipynb)
 * [Graph generation](https://github.com/AnacletoLAB/grape/blob/main/tutorials/Graph_generation.ipynb)
