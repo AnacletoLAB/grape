@@ -37,7 +37,8 @@ Since Ensmallen is written in Rust, on PyPi we distribute pre-compiled packages 
 
 For the Linux binaires we follow the `Python's ManyLinux2010 (PEP 571) <https://www.python.org/dev/peps/pep-0571/>`_ standard which requires libc version >= 2.12, this version was releasted in 03/08/2010 so any Linux System in the last ten years should be compatible. To check your current libc version you can run :code:`ldd --version`.
 
-We also assume that the cpu has the following features: :code:`sse, sse2, ssse3, sse4_1, sse4_2, avx, avx2, bmi1, bmi2, popcnt`. On Linux you can check if your CPU supports these features by running :code:`cat /proc/cpuinfo` and ensuring that all these features are presents under the :code:`flags` section.
+We also assume that the cpu has the following features: :code:`sse, sse2, ssse3, sse4_1, sse4_2, avx, avx2, bmi1, bmi2, popcnt`. **If these features are not present, you cannot use the PyPi pre-compiled binaries.**
+On Linux you can check if your CPU supports these features by running :code:`cat /proc/cpuinfo` and ensuring that all these features are presents under the :code:`flags` section.
 While these features are not strictly required, they significanly speed-up the executions and should be supported by any :code:`x86_64` CPU newer than Intel's Haswell architecture (2013).
 
 If the your CPU doesn't support them you will get, on import, a :code:`ValueError` exception with the following message:
