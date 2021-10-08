@@ -113,7 +113,7 @@ Main functionalities of the library
 
 Tutorials
 ----------------------------------------------
-You can `find tutorials covering various aspects of the GraPE library here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
+You can `find tutorials covering various aspects of the GraPE library `here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_. All tutorials are as self-contained as possible and can be immediately executed on COLAB.
 
 If you want to get quickly started, after having installed `GraPE`_ from Pypi as described above, you can try running the following example using the SkipGram embedding model on the Cora-graph:
 
