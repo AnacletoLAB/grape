@@ -150,7 +150,9 @@ You can `see a tutorial detailing the above script here <https://github.com/Anac
 
 Documentation
 ----------------------------------------------
-Currently the documentation website of the library is being developed.
+On line documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The on line documentation of the library is available here.
 
 Using the automatic method suggestions utility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
