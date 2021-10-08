@@ -153,6 +153,7 @@ Documentation
 On line documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The on line documentation of the library is available `here <https://anacletolab.github.io/grape/index.html>`_.
+Since Ensmallen is written in Rust, and PyO3 (the crate we use for the Python bindings, `doesn't support typing <https://github.com/PyO3/pyo3/issues/510>`_, the documentation is obtained generating an empty skeleton package. This allows to have a proper documentation but you won't be able to see the source-code in it. 
 
 Using the automatic method suggestions utility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
