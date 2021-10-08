@@ -152,7 +152,7 @@ Documentation
 ----------------------------------------------
 On line documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The on line documentation of the library is available here.
+The on line documentation of the library is available `here <https://anacletolab.github.io/grape/`_.
 
 Using the automatic method suggestions utility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
