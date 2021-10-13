@@ -234,7 +234,14 @@ Please cite the following paper if it was useful for your research:
 
 .. code:: bib
 
-    TODO: add bibtex reference here to copy
+    @misc{cappelletti2021grape,
+      title={GraPE: fast and scalable Graph Processing and Embedding}, 
+      author={Luca Cappelletti and Tommaso Fontana and Elena Casiraghi and Vida Ravanmehr and Tiffany J. Callahan and Marcin P. Joachimiak and Christopher J. Mungall and Peter N. Robinson and Justin Reese and Giorgio Valentini},
+      year={2021},
+      eprint={2110.06196},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
     :target: https://badge.fury.io/py/grape
