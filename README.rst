@@ -241,7 +241,7 @@ Please cite the following paper if it was useful for your research:
       eprint={2110.06196},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
-}
+    }
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
     :target: https://badge.fury.io/py/grape
