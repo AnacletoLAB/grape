@@ -60,7 +60,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     tests_require=test_deps,
     install_requires=[
-        "ensmallen>=0.6.2",
-        "embiggen>=0.9.3",
+        "ensmallen==0.7.0.dev6",
+        "embiggen==0.10.0.dev1",
     ]
 )
