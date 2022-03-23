@@ -46,7 +46,7 @@ setup(
     version=__version__,
     description="Rust/Python for high performance Graph Processing and Embedding.",
     long_description=long_description,
-    url="https://github.com/LucaCappelletti94/grape",
+    url="https://github.com/AnacletoLAB/grape",
     author=", ".join(list(authors.keys())),
     author_email=", ".join(list(authors.values())),
     # Choose your license
@@ -60,7 +60,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     tests_require=test_deps,
     install_requires=[
-        "ensmallen>=0.6.2",
-        "embiggen>=0.9.3",
+        "ensmallen==0.7.0.dev6",
+        "embiggen==0.10.0.dev3",
     ]
 )
