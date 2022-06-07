@@ -16,7 +16,7 @@ The currently available tutorials relative to the [Embiggen](https://github.com/
 * [Using SkipGram to compute Cora's node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/SkipGram_to_embed_Cora.ipynb)
 * [Using CBOW to compute Cora's node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_CBOW_to_embed_Cora.ipynb)
 * [Using GloVe to compute Cora's node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/GloVe_to_embed_Cora.ipynb)
-* [Using TransE to compute Cora's node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/TransE_to_embed_Cora.ipynb)
+* [Using TransE to compute STRING's Species Tree node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/TransE_to_embed_Species_Tree.ipynb)
 
 
 ### Opening Issues
