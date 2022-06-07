@@ -1,2 +1,2 @@
 """Current version of package GraPE."""
-__version__ = "0.0.6.dev7"
+__version__ = "0.1.0"

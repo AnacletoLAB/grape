@@ -4,7 +4,7 @@
 
 GraPE
 ===================================
-|pip| |downloads|
+|pip| |downloads| |tutorials| |documentation| |python_version| |DOI| |license|
 
 `GraPE`_ (*Graph Processing and Embedding*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
 
@@ -23,7 +23,6 @@ The following figure shows the main relationships between `Ensmallen`_ and `Embi
     :align: left
 
 
-
 Installation of `GraPE`_
 ----------------------------------------------
 
@@ -33,30 +32,13 @@ For most computers you can just download it using pip:
 
     pip install grape
     
-Since Ensmallen is written in Rust, on PyPi we distribute pre-compiled packages for :code:`Windows, Linux, MacOs` for the Python version :code:`3.6, 3.7, 3.8, 3.9` for :code:`x86_64` cpus.
+Since Ensmallen is written in Rust, on PyPi we distribute pre-compiled packages for :code:`Windows, Linux, MacOs` for the Python version :code:`3.6+` for :code:`x86_64` and :code:`Arm` cpus.
 
-For the Linux binaires we follow the `Python's ManyLinux2010 (PEP 571) <https://www.python.org/dev/peps/pep-0571/>`_ standard which requires libc version >= 2.12, this version was releasted in 03/08/2010 so any Linux System in the last ten years should be compatible. To check your current libc version you can run :code:`ldd --version`.
-
-We also assume that the cpu has the following features: :code:`sse, sse2, ssse3, sse4_1, sse4_2, avx, avx2, bmi1, bmi2, popcnt`. **If these features are not present, you cannot use the PyPi pre-compiled binaries and you have to manually compile Ensmallen** `(Guide) <https://github.com/AnacletoLAB/ensmallen/blob/master/bindings/python/README.md>`_ .
-On Linux you can check if your CPU supports these features by running :code:`cat /proc/cpuinfo` and ensuring that all these features are presents under the :code:`flags` section.
-While these features are not strictly required, they significanly speed-up the executions and should be supported by any :code:`x86_64` CPU newer than Intel's Haswell architecture (2013).
-
-If the your CPU doesn't support them you will get, on import, a :code:`ValueError` exception with the following message:
-
-.. code:: shell
-
-    This library was compiled assuming that SIMD instruction commonly available in CPU hardware since 2013 are present 
-    on the machine where this library is intended to run.
-    On the current machine, the flags <MISSING_FLAGS> are not available.
-    You could still compile Ensmallen on this machine and have a version of the library that can execute here, but the 
-    library has been extensively designed to use SIMD instructions, so you would have a version slower than the one 
-    provided on Pypi.
-
+For the Linux binaries we follow the `Python's ManyLinux2010 (PEP 571) <https://www.python.org/dev/peps/pep-0571/>`_ standard which requires libc version >= 2.12, this version was releasted in 03/08/2010 so any Linux System in the last ten years should be compatible. To check your current libc version you can run :code:`ldd --version`.
 
 These requirements were chosen to provide a good tradeoff between compatability and performance. 
 If your system is not compatible, you can `manually compile Ensmallen <https://github.com/AnacletoLAB/ensmallen/blob/master/bindings/python/README.md>`_ for any  Os, libc version, and CPU architecture (such as Arm, AArch64, RiscV, Mips) which are supported by Rust and LLVM. 
-Manually compiling Ensmallen might require more than half an hour and around 10Gb of RAM, if you encounter any error during the installation and/or compilation feel free to open an Issue here on Github and we will help troubleshoot it.
-
+Manually compiling Ensmallen might require around half an hour and 10GB of RAM, if you encounter any error during the installation and/or compilation feel free to open an Issue here on Github and we will help troubleshoot it.
 
 
 Main functionalities of the library
@@ -64,7 +46,7 @@ Main functionalities of the library
 
 * Robust graph loading and automatic graph retrieval:
 
-     * More than 13000 graphs directly available from the library for benchmarking
+     * More than 80000 graphs directly available from the library for benchmarking
      * Support for multiple graph formats
      * Automatic human readable reports of format errors
      * Automatic human readable reports of the main graph characteristics
@@ -83,9 +65,13 @@ Main functionalities of the library
     
 * Edge and node prediction models:
 
+    * Decision Trees
+    * Random Forest
     * Perceptron
     * Multi-Layer Perceptron
     * Deep Neural Networks
+    * Interface for general models
+    * And more!
 
 * Preprocessing for node embedding and edge prediction:
 
@@ -119,11 +105,10 @@ If you want to get quickly started, after having installed `GraPE`_ from Pypi as
 
 .. code:: python
 
-    from ensmallen.datasets.linqs import Cora
-    from ensmallen.datasets.linqs.parse_linqs import get_words_data
-    from embiggen.pipelines import compute_node_embedding
-    from embiggen.visualizations import GraphVisualization
-    import matplotlib.pyplot as plt
+    from grape.datasets.linqs import Cora, get_words_data
+    from grape.embedders import SkipGramEnsmallen
+    from graph.edge_prediction import RandomForestEdgePrediction
+    from grape import GraphVisualizer
 
     # Dowload, load up the graph and its node features
     graph, node_features = get_words_data(Cora())
@@ -147,6 +132,7 @@ If you want to get quickly started, after having installed `GraPE`_ from Pypi as
 
 You can `see a tutorial detailing the above script here <https://github.com/AnacletoLAB/grape/blob/main/tutorials/SkipGram_to_embed_Cora.ipynb>`_, and you `can run it on COLAB from here <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/SkipGram_to_embed_Cora.ipynb>`_.
 
+If you believe that any example may be of help, do feel free to `open a GitHub issue describing what we are missing in this tutorial <https://github.com/AnacletoLAB/grape/issues/new>`_.
 
 Documentation
 ----------------------------------------------
@@ -228,6 +214,7 @@ And the above will return you:
 
 You can try `to run the code described above on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Method_recommender_system.ipynb>`_.
 
+
 Cite GraPE
 ----------------------------------------------
 Please cite the following paper if it was useful for your research:
@@ -242,6 +229,7 @@ Please cite the following paper if it was useful for your research:
       archivePrefix={arXiv},
       primaryClass={cs.LG}
     }
+    
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
     :target: https://badge.fury.io/py/grape
@@ -260,6 +248,23 @@ Please cite the following paper if it was useful for your research:
 .. _RobinsonLab: https://www.jax.org/research-and-faculty/research-labs/the-robinson-lab/
 .. _BPOP: http://www.berkeleybop.org/index.html
 
+.. |license| image:: https://img.shields.io/badge/License-MIT-blue.svg
+    :target: https://opensource.org/licenses/MIT
+    :alt: License
 
+.. |tutorials| image:: https://img.shields.io/badge/Tutorials-Jupyter%20Notebooks-blue.svg
+    :target: https://github.com/AnacletoLAB/grape/tree/main/tutorials
+    :alt: Tutorials
 
-If you believe that any example may be of help, do feel free to `open a GitHub issue describing what we are missing in this tutorial <https://github.com/AnacletoLAB/grape/issues/new>`_.
+.. |documentation| image:: https://img.shields.io/badge/Documentation-Available%20here-blue.svg
+    :target: https://anacletolab.github.io/grape/index.html
+    :alt: Documentation
+
+.. |DOI| image:: https://img.shields.io/badge/DOI-10.48550/arXiv.2110.06196-blue.svg
+    :target: https://doi.org/10.48550/arXiv.2110.06196
+    :alt: DOI
+
+.. |python_version| image:: https://img.shields.io/badge/Python-3.6+-blue.svg
+    :target: https://pypi.org/project/embiggen/#history
+    :alt: Supported Python versions
+

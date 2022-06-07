@@ -53,14 +53,14 @@ setup(
     license='MIT',
     include_package_data=True,
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 3 - Beta',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3'
     ],
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     tests_require=test_deps,
     install_requires=[
-        "ensmallen==0.7.0.dev15",
-        "embiggen==0.10.0.dev8",
+        "ensmallen>=0.8.0",
+        "embiggen>=0.11.1",
     ]
 )
