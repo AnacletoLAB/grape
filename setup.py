@@ -53,7 +53,7 @@ setup(
     license='MIT',
     include_package_data=True,
     classifiers=[
-        'Development Status :: 3 - Beta',
+        'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3'
     ],
