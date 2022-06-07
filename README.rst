@@ -111,22 +111,15 @@ If you want to get quickly started, after having installed `GraPE`_ from Pypi as
     from grape import GraphVisualizer
 
     # Dowload, load up the graph and its node features
-    graph, node_features = get_words_data(Cora())
-
-    # Compute a SkipGram node embedding, using a second-order random walk sampling
-    node_embedding, training_history = compute_node_embedding(
-        graph,
-        node_embedding_method_name="SkipGram",
-        # Let's increase the probability of explore the local neighbourhood
-        return_weight=2.0,
-        explore_weight=0.1
-    )
+    graph, _ = get_words_data(Cora())
+    
+    # Create the model
+    model = SkipGramEnsmallen()
+    node_embedding = model.fit_transform(graph).get_node_embedding_from_index(0)
 
     # Visualize the obtained node embeddings
-    visualizer = GraphVisualization(graph, node_embedding_method_name="SkipGram")
-    visualizer.fit_transform_nodes(node_embedding)
-
-    visualizer.plot_node_types()
+    visualizer = GraphVisualizer(graph, node_embedding_method_name="SkipGram")
+    visualizer.fit_and_plot_all(node_embedding)
     plt.show()
 
 
@@ -149,7 +142,7 @@ As an example, after having loaded the `STRING Homo Sapiens graph <https://strin
 
 .. code:: python
 
-    from ensmallen.datasets.string import HomoSapiens
+    from grape.datasets.string import HomoSapiens
 
     graph = HomoSapiens()
     graph.components
