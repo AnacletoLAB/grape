@@ -9,13 +9,15 @@ These packages are mimed here by the two sub-directories, ensmallen and embiggen
 from embiggen import *
 from ensmallen import Graph
 
+
 def import_all(module_locals):
-    import embiggen as _embiggen
+    """Execute dynamic loading of submodules."""
     import ensmallen as _ensmallen
+    import embiggen as _embiggen
     import sys as _sys
     import pkgutil as _pkgutil
 
-    for _module in (_embiggen, _ensmallen):
+    for _module in (_ensmallen, _embiggen):
         for _loader, _module_name, _is_pkg in _pkgutil.iter_modules(_module.__path__):
             if not _is_pkg:
                 continue
@@ -26,6 +28,7 @@ def import_all(module_locals):
             ).load_module(_module_name)
             _sys.modules[f'grape.{_module_name}'] = _loaded_module
             module_locals[_module_name] = _loaded_module
+
 
 import_all(locals())
 del import_all

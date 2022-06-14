@@ -5,3 +5,4 @@ graphs
 node_embeddings
 grape.egg-info
 .pytest_cache
+*.webm
