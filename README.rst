@@ -271,4 +271,3 @@ Please cite the following paper if it was useful for your research:
 
 .. |logo| image:: images/grape_logo.jpg
     :width:  80
-    :align: center
