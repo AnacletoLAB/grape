@@ -269,6 +269,6 @@ Please cite the following paper if it was useful for your research:
     :target: https://discord.gg/Nda2cqYvTN
     :alt: Discord Server
 
-.. |logo| image:: .. image:: images/grape_logo.jpg
+.. |logo| image:: image:: images/grape_logo.jpg
     :width:  80
     :align: center
