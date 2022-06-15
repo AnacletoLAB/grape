@@ -268,4 +268,5 @@ Please cite the following paper if it was useful for your research:
     :alt: Discord Server
 
 .. |logo| image:: images/grape_logo.png
+    :target: https://github.com/AnacletoLAB/grape
     :width:  80
