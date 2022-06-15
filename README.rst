@@ -1,10 +1,10 @@
-<p align="center">
+.. class:: center
+
 |logo|
 
 GraPE
 ===================================
 |pip| |downloads| |tutorials| |documentation| |python_version| |DOI| |license| |telegram| |discord|
-</p>
 
 `GraPE`_ (*Graph Processing and Embedding*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
 
