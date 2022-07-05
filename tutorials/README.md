@@ -18,6 +18,10 @@ The currently available tutorials relative to the [Embiggen](https://github.com/
 * [Using GloVe to compute Cora's node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/GloVe_to_embed_Cora.ipynb)
 * [Using TransE to compute STRING's Species Tree node embedding](https://github.com/AnacletoLAB/grape/blob/main/tutorials/TransE_to_embed_Species_Tree.ipynb)
 
+## Tutorials on GraPE's pipelines
+
+* [Edge prediction pipeline](https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using%20the%20edge%20prediction%20pipeline.ipynb)
+* [Node-label prediction pipeline](https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using%20the%20node-label%20prediction%20pipeline.ipynb)
 
 ### Opening Issues
 If you need any new feature, any new tutorial, or if you have anyother issue, do not hesitate [opening an issue in the GraPE repository](https://github.com/AnacletoLAB/grape/issues/new).
