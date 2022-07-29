@@ -255,7 +255,7 @@ Please cite the following paper if it was useful for your research:
     :target: https://doi.org/10.48550/arXiv.2110.06196
     :alt: DOI
 
-.. |python_version| image:: https://img.shields.io/badge/Python-3.6+-blue.svg
+.. |python_version| image:: https://img.shields.io/badge/Python-3.7+-blue.svg
     :target: https://pypi.org/project/embiggen/#history
     :alt: Supported Python versions
 
