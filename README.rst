@@ -1,10 +1,8 @@
-|logo|
-
-GraPE
+🍇 GRAPE
 ===================================
 |pip| |downloads| |tutorials| |documentation| |python_version| |DOI| |license| |telegram| |discord| |twitter|
 
-`GraPE`_ (*Graph Processing and Embedding*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
+`GRAPE`_ (*Graph Representation leArning, Predictions and Evaluation*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
 
 The library is written in *Rust* and *Python* programming languages, and has been developed by `AnacletoLAB <https://anacletolab.di.unimi.it/>`_ (Dept.of Computer Science of the University of Milan), in collaboration with the `Robinson Lab - Jackson Laboratory for Genomic Medicine <https://www.jax.org/research-and-faculty/research-labs/the-robinson-lab>`_ and with the `BBOP - Lawrence Berkeley National Laboratory <http://www.berkeleybop.org/index.html>`_.
 
@@ -255,7 +253,7 @@ Please cite the following paper if it was useful for your research:
     :target: https://doi.org/10.48550/arXiv.2110.06196
     :alt: DOI
 
-.. |python_version| image:: https://img.shields.io/badge/Python-3.6+-blue.svg
+.. |python_version| image:: https://img.shields.io/badge/Python-3.7+-blue.svg
     :target: https://pypi.org/project/embiggen/#history
     :alt: Supported Python versions
 

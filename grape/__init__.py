@@ -7,7 +7,7 @@ These packages are mimed here by the two sub-directories, ensmallen and embiggen
 """
 
 from embiggen import *
-from ensmallen import Graph
+from ensmallen import *
 
 
 def import_all(module_locals):
