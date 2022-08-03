@@ -129,9 +129,6 @@ And the above will return you:
         If the system configuration does not allow for the creation of the thread pool.
 
 
-You can try `to run the code described above on COLAB <https://colab.research.google.com/github/AnacletoLAB/grape/blob/main/tutorials/Method_recommender_system.ipynb>`_.
-
-
 Cite GraPE
 ----------------------------------------------
 Please cite the following paper if it was useful for your research:
