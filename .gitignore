@@ -1,5 +1,6 @@
 __pycache__
 graphs
+string_graphs
 .DS_Store
 .ipynb_checkpoints
 node_embeddings
