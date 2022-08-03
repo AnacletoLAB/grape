@@ -8,3 +8,4 @@ grape.egg-info
 .pytest_cache
 *.webm
 tutorials/embedding
+.rotate
