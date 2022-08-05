@@ -30,7 +30,7 @@ Main functionalities of the library
     * First and second order LINE
     * Unstructured, Structured Embedding, TransE
     * All embedding models have an MMAPP-ed versions to allow for very large embeddings
-    * Integrated models from `Karate Club <https://github.com/benedekrozemberczki/karateclub>`_ and `PyKeen <https://github.com/pykeen/pykeen>`_
+    * Integrated models from `Karate Club <https://github.com/benedekrozemberczki/karateclub>`_ and `PyKEEN <https://github.com/pykeen/pykeen>`_
 * 20+ Classifier models, with easy integration of third parties libraries.
     * All sklearn models, adapted for edge prediction, edge-label prediction and node-label prediction
     * GraphSAGE and Kipf GCN for edge prediction, edge-label prediction and node-label prediction
