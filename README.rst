@@ -129,7 +129,7 @@ And the above will return you:
         If the system configuration does not allow for the creation of the thread pool.
 
 
-Cite GraPE
+Cite GRAPE
 ----------------------------------------------
 Please cite the following paper if it was useful for your research:
 
