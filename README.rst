@@ -14,6 +14,8 @@ As usual, just install it from PyPi by running:
 
     pip install grape
 
+Generally, the installation does not take longer than a minute.
+
 It is possible to `manually compile Ensmallen <https://github.com/AnacletoLAB/ensmallen/blob/master/bindings/python/README.md>`_ for any OS, libc version, and CPU architecture (such as Arm, AArch64, RiscV, Mips) which are supported by Rust and LLVM. Just open an issue if you need some help.
 
 Main functionalities of the library
