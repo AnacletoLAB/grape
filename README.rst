@@ -45,7 +45,7 @@ Main functionalities of the library
 
 Tutorials
 ----------------------------------------------
-You can find tutorials covering various aspects of the GraPE library `here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_.
+You can find tutorials covering various aspects of the GRAPE library `here <https://github.com/AnacletoLAB/grape/tree/main/tutorials>`_.
 All tutorials are as self-contained as possible and can be immediately executed on COLAB.
 
 If you believe that any example may be of help, do feel free to `open a GitHub issue describing what we are missing in this tutorial <https://github.com/AnacletoLAB/grape/issues/new>`_.
@@ -129,14 +129,14 @@ And the above will return you:
         If the system configuration does not allow for the creation of the thread pool.
 
 
-Cite GraPE
+Cite GRAPE
 ----------------------------------------------
 Please cite the following paper if it was useful for your research:
 
 .. code:: bib
 
     @misc{cappelletti2021grape,
-      title={GraPE: fast and scalable Graph Processing and Embedding}, 
+      title={GRAPE: fast and scalable Graph Processing and Embedding}, 
       author={Luca Cappelletti and Tommaso Fontana and Elena Casiraghi and Vida Ravanmehr and Tiffany J. Callahan and Marcin P. Joachimiak and Christopher J. Mungall and Peter N. Robinson and Justin Reese and Giorgio Valentini},
       year={2021},
       eprint={2110.06196},
