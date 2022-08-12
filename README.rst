@@ -32,6 +32,7 @@ Main functionalities of the library
     * First and second order LINE
     * Unstructured, Structured Embedding, TransE
     * All embedding models have an MMAPP-ed versions to allow for very large embeddings
+    * All embedding models have support for mixed precision, allowing embedding using 16 bits floats
     * Integrated models from `Karate Club <https://github.com/benedekrozemberczki/karateclub>`_ and `PyKEEN <https://github.com/pykeen/pykeen>`_
 * 20+ Classifier models, with easy integration of third parties libraries.
     * All sklearn models, adapted for edge prediction, edge-label prediction and node-label prediction
