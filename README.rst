@@ -38,6 +38,7 @@ Main functionalities of the library
     * All sklearn models, adapted for edge prediction, edge-label prediction and node-label prediction
     * GraphSAGE and Kipf GCN for edge prediction, edge-label prediction and node-label prediction
     * Baseline Perceptron for edge prediction
+    * Integrated support to parallelize holdouts across a SLURM cluster
 * Graph processing: if NetworkX has it, odds are good we have it and it is way faster!
     * Resnik, Jaccard, Ancestors Jaccard similarities
     * Diameter, Vertex cover, connected components, Triangles
