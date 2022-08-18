@@ -29,7 +29,7 @@ Main functionalities of the library
     * human readable reports of graph characteristics
 * 60+ Node embedding models, with easy integration of third parties libraries.
     * DeepWalk, Walklets and Node2Vec-based CBOW, SkipGram and GloVe
-    * First and second order LINE
+    * `First <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_First-order_LINE_to_embed_Cora.ipynb>`_ and `second order LINE <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_Second-order_LINE_to_embed_Cora.ipynb>`_
     * Unstructured, Structured Embedding, TransE
     * All embedding models have an MMAPP-ed versions to allow for very large embeddings
     * All embedding models have support for mixed precision, allowing embedding using 16 bits floats
@@ -38,6 +38,7 @@ Main functionalities of the library
     * All sklearn models, adapted for edge prediction, edge-label prediction and node-label prediction
     * GraphSAGE and Kipf GCN for edge prediction, edge-label prediction and node-label prediction
     * Baseline Perceptron for edge prediction
+    * `Integrated support to parallelize holdouts across a SLURM cluster <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using%20HPC%20SLURM%20in%20the%20GRAPE%20evaluation%20pipelines.ipynb>`_
 * Graph processing: if NetworkX has it, odds are good we have it and it is way faster!
     * Resnik, Jaccard, Ancestors Jaccard similarities
     * Diameter, Vertex cover, connected components, Triangles
