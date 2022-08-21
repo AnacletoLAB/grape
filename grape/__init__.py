@@ -32,7 +32,6 @@ def import_all(module_locals):
 
 def print_version():
     from grape.__version__ import __version__ as grape_version
-    import sys
     import os
     import platform
     from environments_utils import is_notebook
@@ -40,7 +39,7 @@ def print_version():
 
     data = {
         "GRAPE Version": grape_version,
-        "Python version": sys.version,
+        "Python version": platform.python_version(),
         "Platform": platform.platform(),
         "Threads number": os.cpu_count(),
     }
