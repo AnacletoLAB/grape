@@ -44,7 +44,7 @@ authors = {
 setup(
     name='grape',
     version=__version__,
-    description="🍇 GRAPE is a Rust/Python library for high-performance Graph Processing and Embedding.",
+    description="🍇 GRAPE is a Rust/Python Graph Representation Learning library for Predictions and Evaluations.",
     long_description=long_description,
     url="https://github.com/AnacletoLAB/grape",
     author=", ".join(list(authors.keys())),
@@ -60,7 +60,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     tests_require=test_deps,
     install_requires=[
-        "ensmallen>=0.8.20",
-        "embiggen>=0.11.33",
+        "ensmallen>=0.8.21",
+        "embiggen>=0.11.34",
     ]
 )

@@ -30,6 +30,56 @@ def import_all(module_locals):
             module_locals[_module_name] = _loaded_module
 
 
+def print_version():
+    from grape.__version__ import __version__ as grape_version
+    import sys
+    import os
+    from environments_utils import is_notebook
+    import pandas as pd
+
+    data = {
+        "GRAPE Version": grape_version,
+        "Python version": sys.version,
+        "System version": os.uname().version,
+        "Threads number": os.cpu_count(),
+    }
+
+    try:
+        from karateclub.version import __version__ as karate_club_version
+        data["KarateClub version"] = karate_club_version
+    except Exception:
+        pass
+
+    try:
+        from torch import __version__ as torch_version
+        data["PyTorch version"] = torch_version
+    except Exception:
+        pass
+
+    try:
+        from tensorflow import __version__ as tf_version
+        data["TensorFlow version"] = tf_version
+    except Exception:
+        pass
+
+    try:
+        from pykeen import get_version as get_pykeen_version
+        data["PyKEEN version"] = get_pykeen_version()
+    except Exception:
+        pass
+
+    if is_notebook():
+        from IPython.display import display
+        display(pd.DataFrame([
+            {
+                "Information": information,
+                "Version": version
+            }
+            for information, version in data.items()
+        ]).set_index("Information"))
+    else:
+        print(data)
+
 import_all(locals())
 del import_all
 
