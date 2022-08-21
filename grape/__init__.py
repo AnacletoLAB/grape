@@ -34,13 +34,14 @@ def print_version():
     from grape.__version__ import __version__ as grape_version
     import sys
     import os
+    import platform
     from environments_utils import is_notebook
     import pandas as pd
 
     data = {
         "GRAPE Version": grape_version,
         "Python version": sys.version,
-        "System version": os.uname().version,
+        "Platform": platform.platform(),
         "Threads number": os.cpu_count(),
     }
 
