@@ -6,6 +6,8 @@
 
 The library is written in *Rust* and *Python* programming languages, and has been developed by `AnacletoLAB <https://anacletolab.di.unimi.it/>`_ (Dept. of Computer Science of the University of Milan), in collaboration with the `Robinson Lab - Jackson Laboratory for Genomic Medicine <https://www.jax.org/research-and-faculty/research-labs/the-robinson-lab>`_ and with the `BBOP - Lawrence Berkeley National Laboratory <http://www.berkeleybop.org/index.html>`_.
 
+The library is composed of two main modules, `Ensmallen <https://github.com/AnacletoLAB/ensmallen>`_, which is the Rust/Python high-performance graph processing submodule, and `Embiggen <https://github.com/monarch-initiative/embiggen>`_, which is the Python Graph Representation learning, Prediction and Evaluation submodule.
+
 Installation of `GRAPE`_
 ----------------------------------------------
 As usual, just install it from PyPi by running:
