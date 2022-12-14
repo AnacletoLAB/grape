@@ -60,6 +60,9 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     tests_require=test_deps,
     install_requires=[
+        "downloaders",
+        "bioregistry",
+        "py-cpuinfo",
         "ensmallen>=0.8.31",
         "embiggen>=0.11.41",
     ]
