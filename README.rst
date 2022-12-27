@@ -26,9 +26,9 @@ Main functionalities of the library
 |features|
 
 * Robust graph loading and graph retrieval:
-    * 80K+ graphs
-    * Support for multiple graph formats
-    * human readable reports of graph characteristics
+    * `80K+ graphs <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Ensmallen_Automatic_graph_retrieval_utilities.ipynb>`_
+    * `Support for multiple graph formats <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Loading_a_Graph_in_Ensmallen.ipynb>`_
+    * `human readable reports of graph characteristics <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Create%20extensive%20knowledge%20graph%20reports%20using%20GRAPE.ipynb>`_
 * 60+ Node embedding models, with easy integration of third parties libraries.
     * DeepWalk, Walklets and Node2Vec-based CBOW, SkipGram and GloVe
     * `First <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_First-order_LINE_to_embed_Cora.ipynb>`_ and `second order LINE <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_Second-order_LINE_to_embed_Cora.ipynb>`_
@@ -38,12 +38,12 @@ Main functionalities of the library
     * Integrated models from `Karate Club <https://github.com/benedekrozemberczki/karateclub>`_ and `PyKEEN <https://github.com/pykeen/pykeen>`_
 * 20+ Classifier models, with easy integration of third parties libraries.
     * All sklearn models, adapted for edge prediction, edge-label prediction and node-label prediction
-    * GraphSAGE and Kipf GCN for edge prediction, edge-label prediction and node-label prediction
-    * Baseline Perceptron for edge prediction
+    * GraphSAGE and Kipf GCN for `edge prediction <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Multi-modal%20GCN%20for%20edge%20prediction.ipynb>`_, edge-label prediction and node-label prediction
+    * `Baseline Perceptron for edge prediction <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Edge%20Predictions%20on%20STRING%20Homo%20Sapiens%20using%20a%20Perceptron.ipynb>`_
     * `Integrated support to parallelize holdouts across a SLURM cluster <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using%20HPC%20SLURM%20in%20the%20GRAPE%20evaluation%20pipelines.ipynb>`_
 * Graph processing: if NetworkX has it, odds are good we have it and it is way faster!
     * Resnik, Jaccard, Ancestors Jaccard similarities
-    * Diameter, Vertex cover, connected components, Triangles
+    * `Diameter <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Exact%20billion-scale%20graph%20diameter%20with%20GRAPE.ipynb>`_, Vertex cover, `connected components <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%20connected%20components%20with%20GRAPE.ipynb>`_, Triangles
     * Filters on graph properties and set operations on graph edges
 * Graph visualization tools
     * TSNE, UMAP, PCA of embeddings
