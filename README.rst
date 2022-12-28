@@ -44,7 +44,7 @@ Main functionalities of the library
 * Graph processing: if NetworkX has it, odds are good we have it and it is way faster!
     * Resnik, Jaccard, Ancestors Jaccard similarities
     * `Diameter <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Exact%20billion-scale%20graph%20diameter%20with%20GRAPE.ipynb>`_, Vertex cover, `connected components <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%20connected%20components%20with%20GRAPE.ipynb>`_, Triangles
-    * Filters on graph properties and set operations on graph edges
+    * Filters on graph properties and `set operations on graph edges <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Graph%20set%20algebra.ipynb>`_
 * Graph visualization tools
     * TSNE, UMAP, PCA of embeddings
     * Edge properties
