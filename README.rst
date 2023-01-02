@@ -43,7 +43,7 @@ Main functionalities of the library
     * `Integrated support to parallelize holdouts across a SLURM cluster <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using%20HPC%20SLURM%20in%20the%20GRAPE%20evaluation%20pipelines.ipynb>`_
 * Graph processing: if NetworkX has it, odds are good we have it and it is way faster!
     * Resnik, Jaccard, Ancestors Jaccard similarities
-    * `Diameter <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Exact%20billion-scale%20graph%20diameter%20with%20GRAPE.ipynb>`_, `Vertex cover <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%202-approximated%20vertex%20cover%20with%20GRAPE.ipynb>`_, `connected components <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%20connected%20components%20with%20GRAPE.ipynb>`_, Triangles
+    * `Diameter <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Exact%20billion-scale%20graph%20diameter%20with%20GRAPE.ipynb>`_, `Vertex cover <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%202-approximated%20vertex%20cover%20with%20GRAPE.ipynb>`_, `connected components <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%20connected%20components%20with%20GRAPE.ipynb>`_, `Triangles <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Billion-scale%20triangle%20count%20with%20GRAPE.ipynb>`_
     * Filters on graph properties and `set operations on graph edges <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Graph%20set%20algebra.ipynb>`_
 * Graph visualization tools
     * TSNE, UMAP, PCA of embeddings
