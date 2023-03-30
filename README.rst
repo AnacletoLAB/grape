@@ -30,7 +30,7 @@ Main functionalities of the library
     * `Support for multiple graph formats <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Loading_a_Graph_in_Ensmallen.ipynb>`_
     * `human readable reports of graph characteristics <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Create%20extensive%20knowledge%20graph%20reports%20using%20GRAPE.ipynb>`_
 * 60+ Node embedding models, with easy integration of third parties libraries.
-    * DeepWalk, Walklets and Node2Vec-based CBOW, SkipGram and GloVe
+    * DeepWalk, Walklets and Node2Vec-based CBOW, SkipGram and GloVe, `also with degree normalization! <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using%20degree-normalization%20in%20random-walk-based%20embedding%20models.ipynb>`_
     * `First <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_First-order_LINE_to_embed_Cora.ipynb>`_ and `second order LINE <https://github.com/AnacletoLAB/grape/blob/main/tutorials/Using_Second-order_LINE_to_embed_Cora.ipynb>`_
     * Unstructured, Structured Embedding, TransE
     * All embedding models have an MMAPP-ed versions to allow for very large embeddings
