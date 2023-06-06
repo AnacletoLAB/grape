@@ -63,7 +63,7 @@ setup(
         "downloaders",
         "bioregistry",
         "py-cpuinfo",
-        "ensmallen>=0.8.38",
-        "embiggen>=0.11.43",
+        "ensmallen>=0.8.60",
+        "embiggen>=0.11.54",
     ]
 )
