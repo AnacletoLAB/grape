@@ -141,14 +141,13 @@ Please cite the following paper if it was useful for your research:
 
 .. code:: bib
 
-    @misc{cappelletti2021grape,
-      title={GRAPE: fast and scalable Graph Processing and Embedding}, 
-      author={Luca Cappelletti and Tommaso Fontana and Elena Casiraghi and Vida Ravanmehr and Tiffany J. Callahan and Marcin P. Joachimiak and Christopher J. Mungall and Peter N. Robinson and Justin Reese and Giorgio Valentini},
-      year={2021},
-      eprint={2110.06196},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-    }
+    @article{cappelletti2023grape,
+      title={GRAPE for Fast and Scalable Graph Processing and random walk-based Embedding}, 
+      author={Cappelletti, L. and Fontana, T. and Casiraghi, E. and Ravanmehr, V. and  Callahan, T.J. and  Cano, C. and Joachimiak, M.P. and 
+Mungall, C.J. and Robinson, P.N. and Reese, J. and Valentini, G.},
+      year={2023},
+      doi={10.1038/s43588-023-00465-8},
+      journal={Nature Computational Science}}
     
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
