@@ -1,8 +1,8 @@
 🍇 GRAPE
 ===================================
-|pip| |downloads| |tutorials| |documentation| |python_version| |DOI| |license| |telegram| |discord| |twitter|
+|pip| |downloads| |tutorials| |documentation| |python_version| |license| |telegram| |discord| |twitter|
 
-`GRAPE`_ (*Graph Representation leArning, Predictions and Evaluation*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High Performance Computing clusters of workstations.
+`GRAPE`_ (*Graph Representation leArning, Predictions and Evaluation*) is a fast graph processing and embedding library, designed to scale with big graphs and to run on both off-the-shelf laptop and desktop computers and High-Performance Computing clusters of workstations.
 
 The library is written in *Rust* and *Python* programming languages, and has been developed by `AnacletoLAB <https://anacletolab.di.unimi.it/>`_ (Dept. of Computer Science of the University of Milan), in collaboration with the `Robinson Lab - Jackson Laboratory for Genomic Medicine <https://www.jax.org/research-and-faculty/research-labs/the-robinson-lab>`_ and with the `BBOP - Lawrence Berkeley National Laboratory <http://www.berkeleybop.org/index.html>`_.
 
@@ -141,14 +141,12 @@ Please cite the following paper if it was useful for your research:
 
 .. code:: bib
 
-    @misc{cappelletti2021grape,
-      title={GRAPE: fast and scalable Graph Processing and Embedding}, 
-      author={Luca Cappelletti and Tommaso Fontana and Elena Casiraghi and Vida Ravanmehr and Tiffany J. Callahan and Marcin P. Joachimiak and Christopher J. Mungall and Peter N. Robinson and Justin Reese and Giorgio Valentini},
-      year={2021},
-      eprint={2110.06196},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-    }
+    @article{cappelletti2023grape,
+      title={GRAPE for Fast and Scalable Graph Processing and random walk-based Embedding}, 
+      author={Cappelletti, L. and Fontana, T. and Casiraghi, E. and Ravanmehr, V. and  Callahan, T.J. and  Cano, C. and Joachimiak, M.P. and Mungall, C.J. and Robinson, P.N. and Reese, J. and Valentini, G.},
+      year={2023},
+      doi={10.1038/s43588-023-00465-8},
+      journal={Nature Computational Science}}
     
 
 .. |pip| image:: https://badge.fury.io/py/grape.svg
@@ -183,10 +181,6 @@ Please cite the following paper if it was useful for your research:
 .. |documentation| image:: https://img.shields.io/badge/Documentation-Available%20here-blue.svg
     :target: https://anacletolab.github.io/grape/index.html
     :alt: Documentation
-
-.. |DOI| image:: https://img.shields.io/badge/DOI-10.48550/arXiv.2110.06196-blue.svg
-    :target: https://doi.org/10.48550/arXiv.2110.06196
-    :alt: DOI
 
 .. |python_version| image:: https://img.shields.io/badge/Python-3.7+-blue.svg
     :target: https://pypi.org/project/embiggen/#history
