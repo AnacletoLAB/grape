@@ -157,8 +157,8 @@ Please cite the following paper if it was useful for your research:
     :target: https://github.com/AnacletoLAB/grape
     :alt: Features
 
-.. |downloads| image:: https://pepy.tech/badge/grape
-    :target: https://pepy.tech/badge/grape
+.. |downloads| image:: https://static.pepy.tech/badge/grape
+    :target: https://pepy.tech/project/grape
     :alt: Pypi total project downloads 
 
 .. _Grape: https://github.com/AnacletoLAB/grape
