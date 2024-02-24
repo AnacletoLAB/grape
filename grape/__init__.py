@@ -23,9 +23,24 @@ def import_all(module_locals):
                 continue
             if _module_name.startswith(("_", "~")):
                 continue
-            _loaded_module = _loader.find_module(
-                _module_name
-            ).load_module(_module_name)
+            try:
+                # The reason for the try-except block is that the `find_module` method
+                # was removed from the `loader` object in Python version 3.12, and we
+                # need to use the `find_spec` method instead. This is not true for older
+                # versions of Python, so we need to use a try-except block to handle both
+                # cases.
+                _loaded_module = _loader.find_module(
+                    _module_name
+                ).load_module(_module_name)
+            except AttributeError:
+                # From Python version 3.12, the `find_module` method was removed.
+                # We need to use the `find_spec` method instead, but this method
+                # does not immediately return a loader, which is instead an attribute
+                # of the returned spec object. We need to use the `loader` attribute
+                # of the returned spec object to get the loader.
+                _loaded_module = _loader.find_spec(
+                    _module_name
+                ).loader.load_module(_module_name)
             _sys.modules[f'grape.{_module_name}'] = _loaded_module
             module_locals[_module_name] = _loaded_module
 
